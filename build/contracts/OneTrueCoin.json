@@ -1,0 +1,105 @@
+{
+  "contract_name": "OneTrueCoin",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "name": "sendCoin",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60008054600160a060020a03191632600160a060020a03161790555b5b6101bb8061003c6000396000f300606060405263ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632f54bf6e8114610053578063893d20e814610086578063a3af7aa8146100b5575b600080fd5b341561005e57600080fd5b610072600160a060020a03600435166100e8565b604051901515815260200160405180910390f35b341561009157600080fd5b6100996100ff565b604051600160a060020a03909116815260200160405180910390f35b34156100c057600080fd5b610072600160a060020a036004351661010f565b604051901515815260200160405180910390f35b600054600160a060020a038281169116145b919050565b600054600160a060020a03165b90565b6000805433600160a060020a0390811691161461012b57600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a038481169182179092559033167f4853ae1b4d437c4255ac16cd3ceda3465975023f27cb141584cd9d44440fed8260405160405180910390a35060015b9190505600a165627a7a723058208858b9aea5afd6d337c91a393ee755861a5e904e6941a7dcc147ace6873895320029",
+  "networks": {
+    "1508954376121": {
+      "events": {
+        "0x4853ae1b4d437c4255ac16cd3ceda3465975023f27cb141584cd9d44440fed82": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xdf1e02e5f81e0f07d7ff0c45ac5ab04782299c63",
+      "updated_at": 1509052777108
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1509052777108
+}
